@@ -1,0 +1,32 @@
+fastapi==0.100.0
+uvicorn[standard]==0.22.0
+websockets==11.0.3
+python-multipart==0.0.6
+pydantic==1.10.12
+
+# MediaPipe + CV
+mediapipe==0.10.5
+opencv-python==4.8.0.74
+# numpy 1.26+ dropped Python 3.8; pin last version that supports it
+numpy==1.24.3
+
+# TensorFlow GPU (RTX 2050 - CUDA 11.8)
+tensorflow==2.13.0
+
+# Skipping whisper temporarily due to build issues
+# openai-whisper==20231117
+
+torch==2.0.1+cu118
+torchaudio==2.0.2+cu118
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+# TTS
+pyttsx3==2.90
+
+# Utils
+scipy==1.10.1
+librosa==0.10.0
+python-dotenv==1.0.0
+loguru==0.7.0
+aiofiles==23.1.0
+httpx==0.24.1
